@@ -6,8 +6,6 @@ class MovieListView extends StatelessWidget {
 
 
   final List<Movie> movieList  = Movie.getMovies();
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +52,7 @@ class MovieListView extends StatelessWidget {
                         color: Colors.white
                       ),),
                     ),
-                    Text("Rating ${movie.imdbRating} / 10")
+                    Text("Rating ${movie.imdbRating} / 10", style: mainTextStyle(),)
                   ],
                 ),
                 Row(
